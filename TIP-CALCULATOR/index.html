@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tip calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css" media="all">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.2.0-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.2.0-dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="icon" type="image/x-icon" href="img/tessy-logo.jpg" /> -->
+</head>
+<body class="body">
+	<header class="text-center">
+		<h1>TIP CALCULATOR</h1>
+	</header>
+	<div class="top-container">
+		<div class="leftContent">
+			<div class="summary-container">
+				<p class="summary-date">14th November, 2020</p>
+				<div class="summary-total">
+					<span class="summary-total-label">TOTAL BILL</span>
+					<span class="summary-total-value total-bill"> 2,500</span>
+				</div>
+
+				<div class="summary-total">
+					<span class="summary-total-label">TOTAL TIP</span>
+					<span class="summary-total-value total-tip"> 2,500</span>
+				</div>
+			</div>
+		</div>
+		<form class="form">
+			<div class="form-group">
+				<label >Location</label>
+				<input type="text" name="" class="form-control" placeholder="enter your shopping name, hotel, restuarant, other" id="location" autofocus="true">
+			</div>
+
+			<div class="form-group">
+				<label >Bill</label>
+				<input type="number" name="" class="form-control" placeholder="enter bill value" id="bill">
+			</div>
+
+			<div class="form-group">
+				<label >Percentage (%)</label>
+				<input type="number" name="" class="form-control" placeholder="enter your Percentage for a giving bill" id="percentage">
+			</div>
+			<div id="form-btn-group">
+				<span class="btn btn-primary" id="add-btn">Submit</span>
+				<span class="btn btn-success" id="saveChange-btn">Save Changes</span>
+			</div>
+		</form>
+	</div>
+
+	<div class="item-container">
+		<table id="data-table" class="hidden">
+			<thead>
+				<th>Sn</th>
+				<th>Location</th>
+				<th>Bill</th>
+				<th>Percentage</th>
+				<th>Tip</th>
+				<th>Total Bill</th>
+				<th>Action</th>
+			</thead>
+			<tbody class="item-table">
+				<!-- <tr class="item" id="item-0">
+					<td>1</td>
+					<td>Shoprite</td>
+					<td>1,500</td>
+					<td>10%</td>
+					<td>45</td>
+					<td>700</td>
+					<td>
+						<span class="btn btn-warning">Edit</span>
+						<span class="btn btn-danger" id='delete-btn'>Delete</span>
+					</td>
+				</tr> -->
+			</tbody>
+		</table>
+	</div>
+</body>
+	<script src="bootstrap-3.2.0-dist/js/jquery-2.1.1.min.js"></script>
+	<script src="bootstrap-3.2.0-dist/js/bootstrap.js"></script>
+	<script src="js/revision.js"></script>
+	<!-- <script src="js/app.js"></script> -->
+</html>
